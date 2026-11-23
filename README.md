@@ -127,7 +127,7 @@ flowchart TB
     TR --> REG[(Model registry<br/>versioned policies + metrics)]
     EV --> REG
     REG --> API[Serving API<br/>FastAPI]
-    API --> UI[Live demo<br/>fixed-timer vs RL side by side]
+    API --> UI[Live demo - React<br/>fixed-timer vs RL side by side]
     CFG -.-> ENV
     CFG -.-> TR
     CFG -.-> EV
