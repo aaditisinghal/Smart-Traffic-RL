@@ -4,6 +4,8 @@
 
 ![Status](https://img.shields.io/badge/status-in%20development-orange)
 ![Python](https://img.shields.io/badge/python-3.11%2B-blue)
+![React](https://img.shields.io/badge/react-front--end-61DAFB)
+![Node.js](https://img.shields.io/badge/node.js-tooling-339933)
 ![RL](https://img.shields.io/badge/reinforcement%20learning-Q--learning%20%7C%20DQN%20%7C%20PPO-purple)
 ![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-black)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -161,13 +163,31 @@ flowchart TB
 
 ## 🛠️ Tech stack
 
+### Languages
+
+| Language | Used for |
+|---|---|
+| **Python 3.11+** | Simulation environment, agents, training, evaluation, serving API, tests |
+| **JavaScript (ES6+)** | Interactive front-end logic and the animated intersection visualization |
+| **React** | Component-based UI for the live demo (fixed-timer vs. RL side by side, metrics panels) |
+| **HTML5** | Page structure; `<canvas>` rendering of the intersection |
+| **CSS3** | Styling and responsive layout of the demo |
+| **Node.js** | Front-end tooling: dependency management (npm), dev server, production build |
+| **YAML** | GitHub Actions workflows, traffic-scenario and hyperparameter configuration |
+| **Bash** | Shell commands in CI/CD workflow steps and helper scripts |
+| **Dockerfile** | Reproducible container builds for the API and front-end |
+| **Markdown** | Documentation: README, design document |
+
+### Tools & frameworks
+
 | Area | Tools |
 |---|---|
-| Language | Python 3.11+ |
 | RL & numerics | NumPy, Gymnasium, PyTorch / Stable-Baselines3 (deep RL stages) |
 | Configuration | YAML, Pydantic |
-| Testing & quality | pytest, Ruff, mypy |
+| Testing & quality (Python) | pytest, Ruff, mypy |
+| Testing & quality (front-end) | ESLint, Prettier, Vitest |
 | Serving | FastAPI, Uvicorn |
+| Front-end | React, Vite, HTML5 Canvas |
 | Packaging | Docker |
 | CI/CD | GitHub Actions (environments, protected deployments, secrets, artifacts) |
 | Hosting | Render |
